@@ -1,0 +1,27 @@
+.CocktailsList {
+	display: flex;
+	flex-wrap: wrap;
+	width: 80%;
+	margin: 0 auto;
+	justify-content: space-between;
+	.link {
+		width: 22%;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		text-decoration: none;
+		font-weight: bold;
+		padding: 10px;
+		box-sizing: border-box;
+		margin-bottom: 30px;
+		border-radius: 5px;
+		border: 1px solid #fdb;
+		color: #fdb;
+		transition: .3s;
+		box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+		&:hover {
+			box-shadow: -10px 10px 10px rgba(0,0,0,0.5);
+			border: 1px solid #fff;
+		}
+	}
+}
