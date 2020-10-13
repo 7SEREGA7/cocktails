@@ -8,18 +8,18 @@ import './App.scss'
 
 export default class App extends Component {
 
-	render() {
-	  return (
-	  	<Router>
-		    <div className="App">
-		    	<NavBar />
-		    </div>
-	      <Switch>
-	        <Route exact path="/" component={Home} />
-	        <Route path="/alcoholic" component={Alcoholic} />
-	        <Route path="/non_alcoholic" component={NonAlcoholic} />
-	      </Switch>
-	    </Router>
-	  )
-	}
+  render() {
+    return (
+  	  <Router>
+    	  <div className="App">
+    		  <NavBar />
+    	  </div>
+    		<Switch>
+    		  <Route exact path="/" component={Home} />
+    		  <Route path="/alcoholic" component={Alcoholic} />
+    		  <Route path="/non_alcoholic" component={NonAlcoholic} />
+    		</Switch>
+  	  </Router>
+  	)
+  }
 }

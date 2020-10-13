@@ -7,7 +7,7 @@ export default class NavBar extends React.Component {
 	render(props) {
 		return (
 			<div className="NavBar">
-		    	<h1 className="title">Cocktail DB</h1>
+		  	<h1 className="title">Cocktail DB</h1>
 				<nav className="menu">
 					<Link className='menu-item' to='/'>
 						Home
@@ -20,6 +20,6 @@ export default class NavBar extends React.Component {
 					</Link>
 				</nav>
 			</div>
-		)
+			)
 	}
 }
