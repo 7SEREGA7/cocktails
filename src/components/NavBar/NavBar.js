@@ -1,21 +1,20 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import withPages from '../../hoc/withPages'
-
+import {paths} from '../../paths/paths'
 import './NavBar.scss'
 
-const NavBar = ({ initial, alcoholic, nonAlcoholic }) => {
+const NavBar = () => {
 	return (
 		<div className="NavBar">
 			<h1 className="title">Cocktail DB</h1>
 			<nav className="menu">
-				<Link className='menu-item' to='/' onClick={initial}>
+				<Link className='menu-item' to={paths.home}>
 					Home
 				</Link>
-				<Link className='menu-item' to='/alcoholic' onClick={alcoholic}> 
+				<Link className='menu-item' to={paths.alcoholic}> 
 					Alcoholic
 				</Link>
-				<Link className='menu-item' to='/non_alcoholic' onClick={nonAlcoholic}> 
+				<Link className='menu-item' to={paths.nonAlcoholic}> 
 					Non Alcoholic
 				</Link>
 			</nav>
@@ -23,4 +22,4 @@ const NavBar = ({ initial, alcoholic, nonAlcoholic }) => {
 	)
 }
 
-export default withPages(NavBar)
+export default NavBar
